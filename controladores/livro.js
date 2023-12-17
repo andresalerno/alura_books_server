@@ -17,7 +17,7 @@ function getLivro(req, res) {
         if(id && Number(id)) {
             const livro = getLivroPorId(id)
             res.send(livro)
-        } else{
+        } else {
             res.status(422)
             res.send("ID inválido")
         }
